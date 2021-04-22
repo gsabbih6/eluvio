@@ -27,7 +27,7 @@ def preprocess(sample, lable):
     print(tokenized_inputs)
     print('labe:',label)
     return tokenized_inputs, tf.reshape(label,(batch_size,1))
-In [ ]:
+
 dataset = tf.data.experimental.make_csv_dataset(
     file_name,
     # select_columns=['title'],
